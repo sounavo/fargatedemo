@@ -1,0 +1,3 @@
+aws cloudformation deploy --stack-name fargate-demo-vpc --template-file ./cloudformation/public-private-vpc.yml --capabilities CAPABILITY_IAM
+aws cloudformation deploy --stack-name fargate-demo-cluster --template-file ./cloudformation/fargate-cluster.yml --capabilities CAPABILITY_IAM
+aws cloudformation deploy --stack-name fargate-demo-chat-app --template-file ./cloudformation/chat-app.yml --capabilities CAPABILITY_IAM
